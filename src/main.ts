@@ -13,7 +13,9 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
       transformOptions: {
         exposeUnsetFields: false,
+        enableImplicitConversion: true,
       },
+      transform: true,
     }),
   );
 
