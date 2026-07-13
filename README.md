@@ -21,3 +21,7 @@ npm i -g @nestjs/cli
 ```
 yarn start:dev
 ```
+6. Reconstruir base de datos
+```
+http://localhost:3000/api/v2/seed
+```
