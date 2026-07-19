@@ -25,3 +25,4 @@ yarn start:dev
 ```
 http://localhost:3000/api/v2/seed
 ```
+7. Clonar el archivo __.env.template__ y renombrar como __.env__ y llenar variables de entorno
