@@ -26,3 +26,15 @@ yarn start:dev
 http://localhost:3000/api/v2/seed
 ```
 7. Clonar el archivo __.env.template__ y renombrar como __.env__ y llenar variables de entorno
+
+Production build
+
+1. Crear y llenar el archivo __.env.prod__
+2. Crear la nueva imagen
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+Por defecto, docker-compose usa el archivo .env, por lo que si tienen el archivo .env y lo configuran con sus variables de entorno de producción, bastaría con
+```
+docker-compose -f docker-compose.prod.yaml up --build
+```
